@@ -1,5 +1,71 @@
-2017-09-14 00:12:55,818 - com.us.netEnrich.NetEnrichGO.NetEnrichGoDriver - ERROR - Test Data file is doesn't exist in the expected folder  C:\Users\chandrasekhar.kovvur\eclipse-workspace\NetEnrichGO\TestData\Driver.xlsx
-2017-09-14 00:14:55,855 - com.us.netEnrich.NetEnrichGO.NetEnrichGoDriver - ERROR - Test Data file is doesn't exist in the expected folder  C:\Users\chandrasekhar.kovvur\eclipse-workspace\NetEnrichGO\TestData\Driver.xlsx
-2017-09-14 12:13:46,838 - com.us.netEnrich.NetEnrichGO.NetEnrichGoDriver - ERROR - Test Data file is doesn't exist in the expected folder  C:\Users\chandrasekhar.kovvur\eclipse-workspace\NetEnrichGO\TestData\Driver.xlsx
-2017-09-14 12:14:27,927 - com.us.netEnrich.NetEnrichGO.NetEnrichGoDriver - ERROR - Test Data file is doesn't exist in the expected folder  C:\Users\chandrasekhar.kovvur\eclipse-workspace\NetEnrichGO\TestData\Driver.xlsx
-
+2017-09-19 10:10:05,562 - com.us.netEnrich.NetEnrichGO.common.Funtionalities.CommonFunctionalities - ERROR - Unable to login into application successfully org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"id","selector":"email"}
+  (Session info: chrome=61.0.3163.91)
+  (Driver info: chromedriver=2.32.498550 (9dec58e66c31bcc53a9ce3c7226f0c1c5810906a),platform=Windows NT 6.3.9600 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 15.04 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'HYDLPT-T-075', ip: '172.29.13.93', os.name: 'Windows 8.1', os.arch: 'x86', os.version: '6.3', java.version: '1.8.0_25'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.32.498550 (9dec58e66c31bcc53a9ce3c7226f0c1c5810906a), userDataDir=C:\Users\CHANDR~1.KOV\AppData\Local\Temp\scoped_dir3708_12074}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=61.0.3163.91, platform=WIN8_1, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: 0cb68bd968b6a6c8666f6e4585b90bf5
+*** Element info: {Using=id, value=email}
+2017-09-19 10:10:20,602 - com.us.netEnrich.NetEnrichGO.common.Funtionalities.CommonFunctionalities - ERROR - ChatInput text field is not displayingorg.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"id","selector":"chatInputBoxId"}
+  (Session info: chrome=61.0.3163.91)
+  (Driver info: chromedriver=2.32.498550 (9dec58e66c31bcc53a9ce3c7226f0c1c5810906a),platform=Windows NT 6.3.9600 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 15.03 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'HYDLPT-T-075', ip: '172.29.13.93', os.name: 'Windows 8.1', os.arch: 'x86', os.version: '6.3', java.version: '1.8.0_25'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.32.498550 (9dec58e66c31bcc53a9ce3c7226f0c1c5810906a), userDataDir=C:\Users\CHANDR~1.KOV\AppData\Local\Temp\scoped_dir3708_12074}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=61.0.3163.91, platform=WIN8_1, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: 0cb68bd968b6a6c8666f6e4585b90bf5
+*** Element info: {Using=id, value=chatInputBoxId}
+2017-09-19 10:10:40,834 - com.us.netEnrich.NetEnrichGO.TestClasses.ProjectCreation_Support_Issues - INFO - Chat Message entered by client user is not displayed in Collaboration chat Area
+2017-09-19 10:10:40,834 - com.us.netEnrich.NetEnrichGO.Reusable_Action - INFO - ************************executing the submodule test cases.CreateProjectandChat**************************
+2017-09-19 11:27:13,414 - com.us.netEnrich.NetEnrichGO.common.Funtionalities.CommonFunctionalities - ERROR - Unable to login into application successfully org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"id","selector":"email"}
+  (Session info: chrome=61.0.3163.91)
+  (Driver info: chromedriver=2.32.498550 (9dec58e66c31bcc53a9ce3c7226f0c1c5810906a),platform=Windows NT 6.3.9600 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 15.02 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'HYDLPT-T-075', ip: '172.29.13.93', os.name: 'Windows 8.1', os.arch: 'x86', os.version: '6.3', java.version: '1.8.0_25'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.32.498550 (9dec58e66c31bcc53a9ce3c7226f0c1c5810906a), userDataDir=C:\Users\CHANDR~1.KOV\AppData\Local\Temp\scoped_dir2600_1940}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=61.0.3163.91, platform=WIN8_1, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: bda348f3cabc3ec17712aa9697aa13f5
+*** Element info: {Using=id, value=email}
+2017-09-19 11:27:28,477 - com.us.netEnrich.NetEnrichGO.common.Funtionalities.CommonFunctionalities - ERROR - ChatInput text field is not displayingorg.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"id","selector":"chatInputBoxId"}
+  (Session info: chrome=61.0.3163.91)
+  (Driver info: chromedriver=2.32.498550 (9dec58e66c31bcc53a9ce3c7226f0c1c5810906a),platform=Windows NT 6.3.9600 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 15.05 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'HYDLPT-T-075', ip: '172.29.13.93', os.name: 'Windows 8.1', os.arch: 'x86', os.version: '6.3', java.version: '1.8.0_25'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.32.498550 (9dec58e66c31bcc53a9ce3c7226f0c1c5810906a), userDataDir=C:\Users\CHANDR~1.KOV\AppData\Local\Temp\scoped_dir2600_1940}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=61.0.3163.91, platform=WIN8_1, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: bda348f3cabc3ec17712aa9697aa13f5
+*** Element info: {Using=id, value=chatInputBoxId}
+2017-09-19 11:27:48,702 - com.us.netEnrich.NetEnrichGO.TestClasses.ProjectCreation_Support_Issues - INFO - Chat Message entered by client user is not displayed in Collaboration chat Area
+2017-09-19 11:28:09,317 - com.us.netEnrich.NetEnrichGO.common.Funtionalities.CommonFunctionalities - ERROR - Unable to login into application successfully org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"id","selector":"email"}
+  (Session info: chrome=61.0.3163.91)
+  (Driver info: chromedriver=2.32.498550 (9dec58e66c31bcc53a9ce3c7226f0c1c5810906a),platform=Windows NT 6.3.9600 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 15.03 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'HYDLPT-T-075', ip: '172.29.13.93', os.name: 'Windows 8.1', os.arch: 'x86', os.version: '6.3', java.version: '1.8.0_25'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.32.498550 (9dec58e66c31bcc53a9ce3c7226f0c1c5810906a), userDataDir=C:\Users\CHANDR~1.KOV\AppData\Local\Temp\scoped_dir6384_3975}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=61.0.3163.91, platform=WIN8_1, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: c043c174ff8cf0bc3fb8016510d51c42
+*** Element info: {Using=id, value=email}
+2017-09-19 11:28:24,340 - com.us.netEnrich.NetEnrichGO.common.Funtionalities.CommonFunctionalities - ERROR - ChatInput text field is not displayingorg.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"id","selector":"chatInputBoxId"}
+  (Session info: chrome=61.0.3163.91)
+  (Driver info: chromedriver=2.32.498550 (9dec58e66c31bcc53a9ce3c7226f0c1c5810906a),platform=Windows NT 6.3.9600 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 15.02 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'HYDLPT-T-075', ip: '172.29.13.93', os.name: 'Windows 8.1', os.arch: 'x86', os.version: '6.3', java.version: '1.8.0_25'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.32.498550 (9dec58e66c31bcc53a9ce3c7226f0c1c5810906a), userDataDir=C:\Users\CHANDR~1.KOV\AppData\Local\Temp\scoped_dir6384_3975}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=61.0.3163.91, platform=WIN8_1, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: c043c174ff8cf0bc3fb8016510d51c42
+*** Element info: {Using=id, value=chatInputBoxId}
+2017-09-19 11:28:44,443 - com.us.netEnrich.NetEnrichGO.TestClasses.ProjectCreation_Support_Issues - INFO - Chat Message entered by client user is not displayed in Collaboration chat Area
+2017-09-19 11:28:44,443 - com.us.netEnrich.NetEnrichGO.Reusable_Action - INFO - ************************executing the submodule test cases.CreateProjectandChat**************************

@@ -75,7 +75,7 @@ public class NetEnrichGoDriver{
 					NetEnrichGoDriver d = new NetEnrichGoDriver();
 				d.load_Module_Drive();
 				}catch(Exception e){
-			  		System.out.println("In catch block");
+			  		System.out.println("In catch block of driver class");
 			  		e.printStackTrace();
 				}
 			}

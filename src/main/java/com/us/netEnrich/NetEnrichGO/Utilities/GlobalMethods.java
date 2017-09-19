@@ -16,6 +16,7 @@ import org.apache.poi.xssf.usermodel.XSSFRow;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebDriverException;
 import org.openqa.selenium.WebElement;
@@ -43,13 +44,10 @@ interface reusableMethods{
 	//Declaring a method to read the object repository values from Object Repository propertiels file and 
 	//Declaring a method to buiding the tag value
 	public By getbjectLocator(String locatorName);
-	//Declaring a method to Login into application
-	public void loginNetenrichapplication(WebDriver driver,String username,String password);
-	
 }
 
 
-
+//Class is implementing interface.
 public class GlobalMethods implements reusableMethods {
 	//Declaring a local variables to store the run time values
 		//public DefaultSelenium selenium;
@@ -110,7 +108,6 @@ public class GlobalMethods implements reusableMethods {
 			return test_Res_Path;
 			
 		}
-		
 		//This method is useful to update the test result into the excel sheet.
 		public void updateTestResult(String module_Name,String subModule_Name,String testCaseId,String strDesc,String strExpres,String strActres,String strStatus,String result_Path){
 			
@@ -165,42 +162,11 @@ public class GlobalMethods implements reusableMethods {
 				
 			}
 			catch(WebDriverException e){
+				System.out.println("Catch block of Open browser");
 				log4j.error("Application is not responding or timeout. Refer OPenBrowser method "+e);
 			}
 			return driver;	
 		}
-		//This Method is useful to logout from the application
-		public void logOut(WebDriver driver) {
-			try {
-				
-				driver.findElement(getbjectLocator("LogOut")).click();
-				Thread.sleep(2000);
-				driver.findElement(getbjectLocator("SignOut")).click();
-			}
-			catch(Exception e){
-				log4j.error("User is unable to logout from the application "+e);
-			}
-		}
-		
-		//This method is useful to login into NetenrichGo application based on the test data values
-		public void loginNetenrichapplication(WebDriver driver,String username,String password) {
-			
-			try {
-				//enter the username and password and login into application
-				driver.findElement(getbjectLocator("ClientUsername")).sendKeys(username);
-				driver.findElement(getbjectLocator("SubmitLogin")).click();
-				driver.findElement(getbjectLocator("ClientPassword")).sendKeys(password);
-				driver.findElement(getbjectLocator("SubmitLogin")).click();
-				
-			}
-			catch(Exception e) {
-				log4j.error("Unable to login into application successfully "+e);
-				
-			}
-			
-			
-		}
-	
 		//This method is useful to close the Browser and stop the selenium server.
 		public void closeBrowser(WebDriver driver){
 			try{
@@ -256,40 +222,13 @@ public class GlobalMethods implements reusableMethods {
 				
 			}catch (Exception e)
 	        {
+				System.out.println("Catch block of object locator method");
 				log4j.error("Not able to read the webelement value from objectrepository.properties file"+e);
 				e.printStackTrace();
 			}
 			return locator;
-			
 		}
-		//This Method is useful to validate the chat message entered by logged in user 
-		public boolean validateChatMessageandClick(String messageChat) {
-			boolean validatemessageflag=false;
-			String chatMessage="";
-			//driver.findElement(By.xpath(".//*[@id=\"idOrgRegPath\"]")).click();
-			try {
-				Thread.sleep(5000);
-				List<WebElement> conversationList=driver.findElements(getbjectLocator("ListofCollabarationMessages"));
-				int cnt=conversationList.size();
-				for (int i=1;i<=cnt;i++){
-					String ChatXpath=rc.getChatMessageXpath();
-					ChatXpath=MessageFormat.format(ChatXpath,"'","'",i);
-					chatMessage=driver.findElement(By.xpath(ChatXpath)).getText();
-					if(chatMessage.equalsIgnoreCase(messageChat)) {
-						driver.findElement(By.xpath(ChatXpath)).click();
-						validatemessageflag=true;
-					}
-					
-				}
-				
-			}
-			catch(Exception e){
-				System.out.println(e);
-				log4j.error("Chart Message entered by user is not identified by selenium webdriver"+e);
-				
-			}
-			return validatemessageflag;
-		}
+		
 		//This Method will return the unique string 
 		public String uniqueString(String chatMessage) {
 			

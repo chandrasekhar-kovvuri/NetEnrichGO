@@ -164,5 +164,20 @@ public class ReadConfigFile {
 			}
 			return path;
 		}
+		//This method will return the path of the chrome driver.exe
+				public String getChatMessageIdXpath()  {
+
+					String path = null;
+					try {
+						File src = new File("./ObjectRepository/LoginPage.properties");
+						FileInputStream fs = new FileInputStream(src);
+						propertyFile.load(fs);
+						path = propertyFile.getProperty("ChatMessageId");
+
+					} catch (Exception ex) {
+						log4j.info("::::::: Chat Message ID Xpath is Not Found in the Path ::::: " + path);
+					}
+					return path;
+				}
 		
 }
